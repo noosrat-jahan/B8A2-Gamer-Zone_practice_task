@@ -206,7 +206,7 @@ nav a:hover{
 }
 
 .know_more_btn{
-    width: 30%;
+    width: 35%;
     border: none;
     padding: 12px 20px;
     border-radius: 48px;
@@ -379,6 +379,7 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border: 1px solid saddlebrown;
     /* gap: 2%; */
 }
 
@@ -452,13 +453,17 @@ footer a{
 /* responsive design for mobile device */
 
 @media screen and (max-width:576px){
+
     .navbar{
-        width: 90%;
+        width: 80%;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
     }
-    .banner, .we_are_gamer{
+    .banner, .we_are_gamer, .different_games_items div{
         flex-direction: column;
+    }
+    .banner_text_container{
+        height: 400px;
     }
     .gallery{
         grid-template-columns: repeat(2, 1fr);
@@ -466,11 +471,19 @@ footer a{
     .play_games, .career{
         grid-template-columns: repeat(1, 1fr);
     }
-    .banner div{
-        width: 90%;
+    .banner div, .banner_text_container{
+        width: 100%;
+    }
+
+    .banner img{
+        margin-left: 35px;
+        width: 80%;
     }
     .text_parent{
-        margin-left: 10px;
+        margin-left: 30px;
+    }
+    .text_parent div{
+        width: 80%;
     }
     .different_games_items div{
         flex-wrap: wrap;
@@ -478,5 +491,38 @@ footer a{
 
     .horse_rider_and_barbie_container{
         margin-left: 50px;
+    }
+    .girl_and_barbie_container{
+        margin-right: 30px;
+    }
+
+    .we_are_gamer div{
+        width: 85%;
+    }
+    .career_text_container{
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    .career_text_container div, .career_text_container p{
+        width: 90%;
+    }
+
+    .career_text_container h2{
+        margin-top: 20px;
+    }
+    #arcade_game{
+        width: 60%;
+    }
+    .game_items_2{
+        gap: 20px;
+    }
+    footer h5 {
+        margin-right: 1px;
+    }
+    footer p{
+        margin-right: 1px;
+    }
+    .footer_all_h5{
+        flex-wrap: wrap;
     }
 }
