@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* navbar styles start here */
+
+.navbar{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar div, .navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav i{
+    font-size: 1.2rem; 
+}
+
+nav a:hover{
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.menu_icons_container{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.1);
+    padding: 12px 20px;
+}
+
+#youtube{
+    color: red;
+}
+
+#G{
+    color: rgb(255, 66, 165);
+}
+
+.gamer{
+    font-size: 2.2rem;
+}
+
+/* navbar styles ends here */
+
+
+/* banner styles start here */
+
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 10px;
+}
+
+.banner div{
+    width: 50%;
+}
+
+.banner_text_container{
+    height: 500px;
+    background-image: url('images/Group14.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-left: 100px; */        
+}
+
+
+.text_parent{
+    width: 100%;
+    height: 100%;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: left; 
+}
+
+.banner_text_container h2{
+    color: rgb(11, 2, 35);
+    font-size: 2rem;
+}
+
+.banner_text_container h1{
+    background: -webkit-linear-gradient(rgb(249, 72, 178), rgb(135, 88, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.banner_text_container p, i{
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.banner_text_container i{
+    color: rgb(249, 72, 178);
+}
+
+.banner img{
+    width: 80%;
+}
+
+.btn{
+    border: none;
+    border-radius: 48px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.text_parent div{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.sign_btn{
+    width: 100%;
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+    padding: 12px 10px;
+}
+
+.go_rog_btn{
+    width: 100%;
+    background: rgb(78, 197, 247);
+    padding: 12px 10px;
+}
+/* banner styles ends here */
+
+
+/* we are gamer section starts here */
+.we_are_gamer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 249, 252);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    /* gap: 30px; */
+}
+
+.we_are_gamer div{
+    width: 40%;
+}
+
+.we_are_gamer img{
+    width: 100%;
+    height: 100%;
+}
+
+.we_are_gamer_text_container{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 15px;
+}
+
+.we_are_gamer_text_container h2{
+    background: -webkit-linear-gradient(rgb(249, 72, 178), rgb(135, 88, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.we_are_gamer_text_container p, #purpose{
+    width: 80%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.know_more_btn{
+    width: 30%;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 48px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+}
+
+
+.online_games{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.gallery{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.online_games h1{
+    font-size: 2rem;
+}
+
+.online_games p{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+
+#colored_text{
+    background: -webkit-linear-gradient(rgb(249, 72, 178),  rgb(135, 88, 241)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.online_games img{
+    width: 100%;
+}
+
+
+.play_games{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+
+.horse_rider_and_barbie_container, .girl_and_barbie_container{
+    position: relative;
+}
+
+.play_games h3{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.play_games p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.play_games img{ 
+    width: 100%;
+    height: 90%;
+}
+
+#img_barbie{
+    width: 50%;
+    height: 55%;
+    position: absolute;
+    right: 73%;  
+    top: 55%;  
+}
+
+#img_barbie2{
+    width: 45%;
+    height: 55%;
+    position: absolute;
+    left: 73%;  
+    top: 55%;  
+}
+
+
+/* career section styles start here */
+.career{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(255, 66, 165);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.career img{
+    width: 100%;
+}
+
+.career_text_container{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.career_text_container div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.career_text_container h2{
+    font-size: 2rem;
+}
+
+.career_description{
+    font-size: 0.9rem;
+    color: #ffffffe2;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.career_list{
+    font-size: 1rem;
+    color: #ffffffef;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.right {
+    text-align: right !important; 
+}
+
+.career button{
+    width: 35%;
+    background-color: #fff;
+    color: rgb(255, 85, 174);
+    font-size: 0.7rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 48px;
+    padding: 12px 22px;
+}
+
+.different_games_items{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.different_games_items div{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 2%; */
+}
+
+.different_games_items img{
+    width: 40px;
+}
+
+.different_games_items h4{
+    font-size: 1rem;
+}
+
+#arcade_game{
+    width: 20%;
+    border: 2px solid  rgb(255, 85, 174);
+    border-radius: 48px;
+    padding: 10px 16px;
+}
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(11, 2, 35);
+    color: #fff;
+    padding: 80px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer div{
+    width: 80%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer_last_div{
+    margin-bottom: 25px;
+}
+
+footer h5{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 50px;
+    opacity: 0.9;
+}
+
+footer i{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ffffff94;
+    margin-right: 40px; 
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* responsive design for mobile device */
+
+@media screen and (max-width:576px){
+    .navbar{
+        width: 90%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .banner, .we_are_gamer{
+        flex-direction: column;
+    }
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .play_games, .career{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner div{
+        width: 90%;
+    }
+    .text_parent{
+        margin-left: 10px;
+    }
+    .different_games_items div{
+        flex-wrap: wrap;
+    }
+
+    .horse_rider_and_barbie_container{
+        margin-left: 50px;
+    }
+}
