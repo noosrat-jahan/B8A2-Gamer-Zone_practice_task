@@ -379,7 +379,7 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid saddlebrown;
+    /* border: 1px solid saddlebrown; */
     /* gap: 2%; */
 }
 
