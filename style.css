@@ -87,6 +87,7 @@ nav a:hover{
 }
 
 .banner_text_container{
+    width: 100%;
     height: 500px;
     background-image: url('images/Group14.png');
     background-repeat: no-repeat;
@@ -247,7 +248,7 @@ nav a:hover{
     background: -webkit-linear-gradient(rgb(249, 72, 178),  rgb(135, 88, 241)); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 700;
 }
 
@@ -267,6 +268,12 @@ nav a:hover{
     justify-content: space-between;
     column-gap: 100px;
     row-gap: 100px;
+}
+
+.play_games_first_div{
+    width: 70%; 
+    text-align: right; 
+    margin-left: 100px;
 }
 
 .horse_rider_and_barbie_container, .girl_and_barbie_container{
@@ -459,20 +466,25 @@ footer a{
         flex-direction: column;
         gap: 40px;
     }
-    .banner, .we_are_gamer, .different_games_items div{
+    .nav_items{
         flex-direction: column;
+    }
+    .nav_primary_links{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
     }
     .banner_text_container{
         height: 400px;
     }
-    .gallery{
-        grid-template-columns: repeat(2, 1fr);
+    .banner div{
+        width: 85%;
     }
-    .play_games, .career{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .banner div, .banner_text_container{
-        width: 100%;
+    .banner_text_container{
+        width: 80%;
+        margin-top: 5px;
+        margin-left: 30px;
     }
 
     .banner img{
@@ -480,11 +492,45 @@ footer a{
         width: 80%;
     }
     .text_parent{
+        width: 50%;
         margin-left: 30px;
     }
     .text_parent div{
-        width: 80%;
+        width: 70%;
     }
+    .we_are_gamer, .different_games_items div{
+        flex-direction: column;
+    }
+    .we_are_gamer_text_container{
+        align-items: center;
+        margin-right: 0px;
+    }
+    .we_are_gamer div{
+        width: 85%;
+    }
+    .online_games h1{
+        font-size: 1.5rem;
+    }
+    .online_games img{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        align-items: center;
+    }
+    .play_games, .career{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .play_games div{
+        text-align: center;
+        margin-left: 40px;
+    }
+    .play_games_first_div{
+        margin-left: 40px;
+    }
+    
     .different_games_items div{
         flex-wrap: wrap;
     }
@@ -495,10 +541,7 @@ footer a{
     .girl_and_barbie_container{
         margin-right: 30px;
     }
-
-    .we_are_gamer div{
-        width: 85%;
-    }
+   
     .career_text_container{
         margin-left: 30px;
         margin-bottom: 50px;
@@ -506,9 +549,12 @@ footer a{
     .career_text_container div, .career_text_container p{
         width: 90%;
     }
-
     .career_text_container h2{
         margin-top: 20px;
+    }
+    .career img{
+        width: 90%;
+        margin-left: 25px;
     }
     #arcade_game{
         width: 60%;
